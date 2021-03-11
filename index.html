@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let firstValue = parseInt(prompt("Type first value"));
+      let operator = prompt("Type an operator");
+      let secondValue = parseInt(prompt("type second value"));
+
+      //   if (operator == "+") {
+      //     console.log(firstValue + secondValue);
+      //   } else if (operator == "-") {
+      //     console.log(firstValue - secondValue);
+      //   } else {
+      //     console.log("there is an error");
+      //   }
+
+      switch (operator) {
+        case "+":
+          console.log(firstValue + secondValue);
+          break;
+        case "-":
+          console.log(firstValue - secondValue);
+          break;
+        case "*":
+          console.log(firstValue * secondValue);
+          break;
+        case "/":
+          console.log(firstValue / secondValue);
+          break;
+        default:
+          console.log("Invalid operator");
+      }
+    </script>
+  </body>
+</html>
