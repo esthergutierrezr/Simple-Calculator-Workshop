@@ -33,7 +33,7 @@ myButton.addEventListener("click", function () {
       console.log("Invalid operator");
   }
 
-  result.innerText = `Result: ${calculation}`;
+  result.innerText = `${calculation}`;
   document.getElementById("firstNumber").value = 0;
   document.getElementById("secondNumber").value = 0;
 });

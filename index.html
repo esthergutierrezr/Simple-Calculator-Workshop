@@ -4,23 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="styling.css" />
   </head>
   <body>
-    <h1>Simple Calcularor</h1>
-    <div>
-      <label for="First Number">First Number</label>
-      <input type="text" id="firstNumber" />
-      <label for="Action">Action</label>
-      <select id="operator">
-        <option value="+">+</option>
-        <option value="-">-</option>
-        <option value="/">/</option>
-        <option value="*">*</option>
-      </select>
-      <label for="Second Number">Second Number</label>
-      <input type="text" id="secondNumber" />
-      <button id="button">Calculate</button>
-      <div id="result">Result:</div>
+    <div class="base">
+      <h1>Simple Calcularor</h1>
+      <div class="inputs">
+        <div class="first-input">
+          <label for="First Number">First Number</label>
+          <input type="text" id="firstNumber" />
+        </div>
+
+        <select id="operator">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="/">/</option>
+          <option value="*">*</option>
+        </select>
+
+        <div class="second-input">
+          <label for="Second Number">Second Number</label>
+          <input type="text" id="secondNumber" />
+        </div>
+        <button id="button">Calculate</button>
+        <div id="result"></div>
+      </div>
     </div>
   </body>
   <script src="simpleCalculator.js"></script>
