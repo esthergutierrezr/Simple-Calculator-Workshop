@@ -6,35 +6,22 @@
     <title>Document</title>
   </head>
   <body>
-    <script>
-      let firstValue = parseInt(prompt("Type first value"));
-      let operator = prompt("Type an operator");
-      let secondValue = parseInt(prompt("type second value"));
-
-      //   if (operator == "+") {
-      //     console.log(firstValue + secondValue);
-      //   } else if (operator == "-") {
-      //     console.log(firstValue - secondValue);
-      //   } else {
-      //     console.log("there is an error");
-      //   }
-
-      switch (operator) {
-        case "+":
-          console.log(firstValue + secondValue);
-          break;
-        case "-":
-          console.log(firstValue - secondValue);
-          break;
-        case "*":
-          console.log(firstValue * secondValue);
-          break;
-        case "/":
-          console.log(firstValue / secondValue);
-          break;
-        default:
-          console.log("Invalid operator");
-      }
-    </script>
+    <h1>Simple Calcularor</h1>
+    <div>
+      <label for="First Number">First Number</label>
+      <input type="text" id="firstNumber" />
+      <label for="Action">Action</label>
+      <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="/">/</option>
+        <option value="*">*</option>
+      </select>
+      <label for="Second Number">Second Number</label>
+      <input type="text" id="secondNumber" />
+      <button id="button">Calculate</button>
+      <div id="result">Result:</div>
+    </div>
   </body>
+  <script src="simpleCalculator.js"></script>
 </html>
